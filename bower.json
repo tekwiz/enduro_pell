@@ -1,0 +1,24 @@
+{
+  "name": "enduro_pell",
+  "description": "Adds Pell WYSIWYG Editor to Enduro",
+  "main": "index.js",
+  "authors": [
+    "MaxMedia"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "enduro.js",
+    "enduro_admin",
+    "enduro",
+    "enduro_plugin"
+  ],
+  "homepage": "https://github.com/maxmedia/enduro_pell",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
