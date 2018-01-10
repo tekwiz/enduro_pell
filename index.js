@@ -11,6 +11,7 @@ enduro_pell.prototype.brick_configuration = {
 enduro.api.brick_processors.add_processor('cms_context_processor', function (cms_context) {
   return new Promise(function (resolve, reject) {
     enduro.api.context_modifiers.add_sibling_to_type(cms_context, 'pell', 'control_path', '/brick/enduro_pell/pell_control')
+    enduro.api.context_modifiers.add_sibling_to_type(cms_context, 'pellminimal', 'control_path', '/brick/enduro_pell/pell_controlminimal')
     resolve(cms_context)
   })
 })

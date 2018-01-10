@@ -39,3 +39,30 @@ enduro_admin_app.compileProvider
       }
     }
   })
+
+enduro_admin_app.compileProvider
+  .directive('pellminimal', function () {
+    return {
+      link: function (scope, element, attr) {
+        $.getScript('https://unpkg.com/pell', function () {
+          var current_content = window.pell.init({
+            element: element[0],
+            actions: [
+              'bold',
+              'italic',
+              'link'
+            ],
+            onChange: function (html) {
+              scope.context[scope.terminatedkey] = html
+            }
+          })
+
+          scope.$watch('current_culture', function () {
+            current_content.content.innerHTML = scope.context[scope.terminatedkey] || ''
+          })
+
+          current_content.content.innerHTML = scope.context[scope.terminatedkey]
+        })
+      }
+    }
+  })
