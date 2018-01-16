@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/maxmedia/enduro_pell/issues"
   },
-  "homepage": "https://github.com/maxmedia/enduro_pell#readme"
+  "homepage": "https://github.com/maxmedia/enduro_pell#readme",
+  "engines": {
+    "node": ">= 6"
+  },
+  "peerDependencies": {
+    "enduro": "^1.4.41"
+  }
 }
