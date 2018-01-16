@@ -14,7 +14,9 @@
     "enduro.js",
     "enduro_admin",
     "enduro",
-    "enduro_plugin"
+    "enduro_plugin",
+    "pell",
+    "wysiwyg"
   ],
   "author": "MaxMedia",
   "license": "Apache-2.0",
