@@ -19,6 +19,10 @@
     "wysiwyg"
   ],
   "author": "MaxMedia",
+  "maintainers": [
+    "Nick Lambert (http://nicklambert.io)",
+    "Travis D. Warlick, Jr. (https://www.traviswarlick.com)"
+  ],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/maxmedia/enduro_pell/issues"
