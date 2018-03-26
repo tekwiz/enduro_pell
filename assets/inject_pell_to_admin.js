@@ -4,7 +4,7 @@ $.ajaxSetup({
 })
 
 // inject pell's css into the admin interface
-$('head').append('<link rel="stylesheet" type="text/css" href="https://unpkg.com/pell/dist/pell.min.css">')
+$('head').append('<link rel="stylesheet" type="text/css" href="/brick/enduro_pell/vendor/pell-1.0.4.min.css">')
 
 // * ———————————————————————————————————————————————————————— * //
 // *	custom wysiwyg directive
@@ -44,7 +44,7 @@ enduro_admin_app.compileProvider
   .directive('pellminimal', function () {
     return {
       link: function (scope, element, attr) {
-        $.getScript('https://unpkg.com/pell', function () {
+        $.getScript('/brick/enduro_pell/vendor/pell-1.0.4.min.js', function () {
           var current_content = window.pell.init({
             element: element[0],
             actions: [
